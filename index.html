@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Geo Jobe Coding Challenge</title>
+
+  <!-- Imports -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- FontAwesome-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+
+  <!-- ArcGIS -->
+  <link rel="stylesheet" href="https://js.arcgis.com/3.33/esri/css/esri.css">
+  <script src="https://js.arcgis.com/3.33/"></script>
+
+  <!--App CSS-->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="row">
+      <div class="col-12">
+        <div id="anonymousPanel">
+          <span id="sign-in" class="action"><i class="fas fa-sign-in-alt"></i> Sign In</span>
+        </div>
+
+        <div id="personalizedPanel" style="display: none;">
+          Welcome <strong id="userId"></strong> &nbsp;-&nbsp;
+          <span id="sign-out" class="action">Sign Out</span>
+        </div>
+        <!-- for the map -->
+        <div id="viewDiv" style="display: none;"></div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="row">
+      <div class="col-12">
+        <!-- User Items -->
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<!-- App JS-->
+<script src="./app/environment.js"></script>
+<script src="./app/authenticator.js"></script>
+<script src="./main.js"></script>
