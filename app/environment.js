@@ -1,5 +1,5 @@
 // ArcGIS REST API
-const apiBaseUrl = 'https://www.arcgis.com/sharing';
+const apiBaseUrl = 'https://www.arcgis.com';
 
 // ArcGIS App ID
 const clientId = '4pD48Fp57UcZLTZM';
