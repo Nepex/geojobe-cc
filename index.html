@@ -18,22 +18,24 @@
   <link rel="stylesheet" href="https://js.arcgis.com/3.33compact/dijit/themes/claro/claro.css">
   <script src="https://js.arcgis.com/3.33/"></script>
 
+
   <!--App CSS-->
   <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body>
-  <div class="container">
+<body class="claro">
+  <div class="container h-100">
     <!-- Header -->
     <div class="row">
-      <div class="col-12">
-        <div id="anonymousPanel">
-          <span id="sign-in" class="action"><i class="fas fa-sign-in-alt"></i> Sign In</span>
-        </div>
+      <div class="col-12 header">
 
-        <div id="personalizedPanel" style="display: none;">
-          Welcome <strong id="userId"></strong> &nbsp;-&nbsp;
-          <span id="sign-out" class="action">Sign Out</span>
+
+        <div id="authedLinks" style="display: none;">
+          Welcome <strong id="userId"></strong>
+
+          <div class="nav-links">
+            <span id="sign-out" class="action"><i class="fas fa-sign-out-alt"></i> Sign Out</span>
+          </div>
         </div>
         <!-- for the map -->
         <div id="viewDiv" style="display: none;"></div>
@@ -41,8 +43,30 @@
     </div>
 
     <!-- Body -->
-    <div class="row">
-      <div class="col-12">
+    <div class="row content-body">
+      <div class="col-12 text-center">
+
+        <!-- <span dojotype="SignInPanel">
+        </span> -->
+
+        <div id="signInPrompt" class="sign-in-container">
+          <div class="sign-in-prompt">
+            <h4>Sign-in Request</h4>
+
+            <img src="https://cfcdn.streetfightmag.com/wp-content/uploads/ESRI_Globe.png"
+              class="img-fluid sign-in-logo" />
+
+            <div class="sign-in-text">
+              The following page is requesting you to sign-in to your ArcGIS account. <br /> <br />
+
+              Please click below to continue.
+            </div>
+
+            <button id="signIn" class="btn"><i class="fas fa-sign-in-alt"></i> ArcGIS Sign In</button>
+          </div>
+        </div>
+
+
         <!-- User Items -->
         <div id="itemGallery" class="esri-item-gallery" style="width: 100%;"></div>
       </div>
@@ -55,5 +79,6 @@
 
 <!-- App JS-->
 <script src="./app/environment.js"></script>
+<!-- <script src="./app/views/sign-in/sign-in.js"></script> -->
 <script src="./app/authenticator.js"></script>
 <script src="./main.js"></script>

@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500,700');
 html, body {
-  font-family: Lucida Sans, Lucida Grande, Arial !important;
+  font-family: 'Lato', sans-serif !important;
   font-size: 14px;
   width: 100%;
   height: 100%;
@@ -7,6 +8,75 @@ html, body {
   padding: 0px;
 }
 
+.header {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-links {
+  float: right;
+}
+
+.btn {
+  color: #fff;
+  background-color: #239B56;
+  border: #239B56;
+  padding: 10px 20px 10px 20px;
+}
+
+.btn:hover, .btn:active, .btn:visited {
+  color: #fff;
+  background-color: #28B463 !important;
+}
+
+.action {
+  color: blue;
+  cursor: pointer;
+}
+
+.content-body {
+  padding-top: 20px;
+  height: 100%;
+}
+
+/* Sign in */
+.sign-in-container {
+  min-height: 100%;
+  min-width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sign-in-prompt {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 50px 10px 50px 10px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sign-in-logo {
+  width: 75px;
+  height: 75px;
+  margin: 10px 0px 20px 0px;
+}
+
+.sign-in-text {
+  text-align: center;
+  padding: 20px 0px 40px 0px;
+  margin: auto;
+  width: 80%;
+}
+
+
+
+/*  Esri boilerplate css */
 .esri-item-gallery .esri-item-container {
   float: left;
   text-align: center;
@@ -36,10 +106,4 @@ html, body {
 
 .esri-item-gallery .esri-null-title {
   color: #999999;
-}
-
-.action {
-  color: blue;
-  cursor: pointer;
-  text-decoration: underline;
 }
